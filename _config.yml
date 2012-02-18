@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://blog.ocheyedan.net
+title: Ocheyedan Blog
+subtitle: We are interested in making things hum
+author: Brian Langel and Trevor Smith
 simple_search: http://google.com/search
 description:
 
@@ -89,7 +89,7 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
+disqus_short_name: ocheyedan
 disqus_show_comment_count: false
 
 # Google Analytics
