@@ -1,0 +1,35 @@
+---
+layout: post
+title: "Kotlin: A Nice Blend of Theory and Practice?"
+date: 2012-02-19 18:06
+comments: true
+categories: kotlin java functional_programming
+---
+Why We're Interested in a New Language
+--------------------------------------
+Functional programming and strong static typing are both amazing.
+We both fell in love with OCaml when introduced to it in college.
+However, OCaml isn't widely used, and suffers from poor library support
+(try to make a scalable Thrift server in OCaml recently?)
+
+Both of us have ended up programming a lot of Java. We've found that there's a lot to like about Java:
+JVM is an amazing piece of software, strong community, great libraries (Netty, Guava, Guice) and excellent supporting tools (build, test,
+continuous integration, code coveration, good static analysis tools). This ecosystem should not be understated:
+it helps us be very productive and ship high quality code. However, we are continually left unsatisfied with
+the Java language (algebriac types? nope.)
+
+Clearly our frustration isn't new; this post is hitting on well tread territory. Others have appreciated the high quality the
+JVM ecosystem provides, but were frustrated by Java as well -- these people created new languages on the JVM. Clojure and Scala are two
+that have a lot of promise, but we don't think fit the bill. Clojure has some nice features, but we cannot get behind a dynamic type system.
+Scala has many awesome features, but too many. So much of our lives are spent making decisions about the interesting problems we program on, I don't want to 
+be spending time deciding what subset of a language to use. The langauge should make it clear.
+
+Enter Kotlin
+-------------
+Kotlin is a new (pre-beta) JVM-based language from Jetbrains. We both got very excited when we read about it. Kotlin appears to have an eye on the kind of theory
+we like (functional programming paradigms, strong static type system) and practice (written for the JVM, classes do not allow inheritance by default). Really there
+are a lot of exciting features, checkout their blog post, and documentation.
+
+The designers of Kotlin's aestetics/sensibilities appear to be so in line with our own: the exciting thing about programming is to _make_ something amazing. Part of that fun is using
+amazing tools, but tools that allow you to get work done, and make more amazing somethings. Kotlin's current description of traits, the choice to run on the JVM and various other
+decisions highlight this. We're super excited to see where this project goes.
