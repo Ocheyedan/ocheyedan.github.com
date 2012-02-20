@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Ocheyedan Blog]]></title>
-  <link href="http://blog.ocheyedan.net/atom.xml" rel="self"/>
+  <title><![CDATA[Category: programming_languages | Ocheyedan Blog]]></title>
+  <link href="http://blog.ocheyedan.net/blog/categories/programming-languages/atom.xml" rel="self"/>
   <link href="http://blog.ocheyedan.net/"/>
   <updated>2012-02-19T21:19:35-05:00</updated>
   <id>http://blog.ocheyedan.net/</id>
@@ -18,26 +18,26 @@
     <link href="http://blog.ocheyedan.net/blog/2012/02/19/kotlin-initial-thoughts-and-some-setup/"/>
     <updated>2012-02-19T18:06:00-05:00</updated>
     <id>http://blog.ocheyedan.net/blog/2012/02/19/kotlin-initial-thoughts-and-some-setup</id>
-    <content type="html"><![CDATA[<h2>Why We&#8217;re Interested in a New Language</h2>
+    <content type="html"><![CDATA[<h2>Why We're Interested in a New Language</h2>
 
 <p>In college we were introduced to SML and OCaml. We became enamored with
-functional programming and strong static type systems. &#8220;Bugs are found for you!&#8221; is an expression one frequently
+functional programming and strong static type systems. "Bugs are found for you!" is an expression one frequently
 hears from the <em>new functional convert</em>. After school, we began programming large and complex systems with other developers.
-The amazing functional languages we loved suddenly seemed lacking: e.g. OCaml isn&#8217;t widely used, suffers from poor library support,
+The amazing functional languages we loved suddenly seemed lacking: e.g. OCaml isn't widely used, suffers from poor library support,
 and lacks good supporting tools.</p>
 
-<p>We ended up programming a lot of Java. We&#8217;ve found that there&#8217;s a lot to like:
+<p>We ended up programming a lot of Java. We've found that there's a lot to like:
 strong community support, great libraries (<a href="http://netty.io/">Netty</a>, <a href="http://code.google.com/p/guava-libraries/">Guava</a>,
 <a href="http://cglib.sourceforge.net/">cglib</a>, <a href="http://joda-time.sourceforge.net/">Joda</a>), excellent tools (build, test,
 continuous integration, code coverage) and the JVM is an amazing piece of software. This ecosystem should not be understated:
 the gestalt is enormous gains in productivity and allows developers to ship high quality code. However, we are continually
-left unsatisfied with the Java language &#8211; algebraic data types? Nope.</p>
+left unsatisfied with the Java language -- algebraic data types? Nope.</p>
 
-<p>Clearly our frustration isn&#8217;t new. These points are hitting on well tread territory. Others have appreciated the high quality that
-the JVM ecosystem provides, but were frustrated by Java &#8211; these people created new languages on the JVM. Clojure and Scala are two
+<p>Clearly our frustration isn't new. These points are hitting on well tread territory. Others have appreciated the high quality that
+the JVM ecosystem provides, but were frustrated by Java -- these people created new languages on the JVM. Clojure and Scala are two
 which initially excited us. Clojure has some nice features (lisps can be fun), but we cannot get behind a dynamic type system.
 Scala has many awesome ideas, but too many. So much of our lives are spent making decisions about the interesting
-problems we program on, we don&#8217;t want to be spending time deciding what subset of a language to use. The language should make it clear.</p>
+problems we program on, we don't want to be spending time deciding what subset of a language to use. The language should make it clear.</p>
 
 <h2>Enter Kotlin</h2>
 
@@ -51,17 +51,8 @@ of many of the features show that the developers have experience writing softwar
 
 <p>The designers of Kotlin have aesthetics which appear to be in line with our own: the exciting thing about programming is
 the ability to make magic a reality. Computer Science gives us theory that allows us to talk about magic,
-we need programming tools which help us make that magic. Kotlin&#8217;s proposed language features, the choice to run on the JVM and its
+we need programming tools which help us make that magic. Kotlin's proposed language features, the choice to run on the JVM and its
 blending of programming language theory with a motivation to get things done make us super excited to see where this project goes.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hello.]]></title>
-    <link href="http://blog.ocheyedan.net/blog/2012/02/18/hello/"/>
-    <updated>2012-02-18T18:42:00-05:00</updated>
-    <id>http://blog.ocheyedan.net/blog/2012/02/18/hello</id>
-    <content type="html"><![CDATA[<p>This is our blog. We&#8217;re excited it is up.</p>
 ]]></content>
   </entry>
   
