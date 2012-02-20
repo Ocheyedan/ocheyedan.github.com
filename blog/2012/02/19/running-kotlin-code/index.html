@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Ocheyedan Blog</title>
+  <title>Running Kotlin Code - Ocheyedan Blog</title>
   <meta name="author" content="Brian Langel and Trevor Smith">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.ocheyedan.net">
+  <link rel="canonical" href="http://blog.ocheyedan.net/blog/2012/02/19/running-kotlin-code">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -62,15 +62,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/02/19/running-kotlin-code/">Running Kotlin Code</a></h1>
+      <h1 class="entry-title">Running Kotlin Code</h1>
     
     
       <p class="meta">
@@ -88,14 +85,14 @@
 
 <time datetime="2012-02-19T22:35:00-05:00" pubdate data-updated="true">Feb 19<span>th</span>, 2012</time>
         
-         | <a href="/blog/2012/02/19/running-kotlin-code/#disqus_thread">Comments</a>
+         | <a href="#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>The Kotlin tutorials do not discuss how to execute compiled Kotlin code from the command line.</p>
+<div class="entry-content"><p>The Kotlin tutorials do not discuss how to execute compiled Kotlin code from the command line.</p>
 
 <p>Setting up Kotlin, and running Kotlin code in the IntelliJ IDE plugin is documented
 <a href="http://hadihariri.com/2012/02/17/the-kotlin-journey-part-i-getting-things-set-up/">here</a>.</p>
@@ -179,94 +176,16 @@ variable <em>KOTLIN_HOME</em>.</p>
 &lt;/project&gt;</code></pre></noscript></div>
 
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/02/19/kotlin-blend-theory-practice/">Kotlin: A Nice Blend of Theory and Practice?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">Brian Langel and Trevor Smith</span></span>
 
-<time datetime="2012-02-19T18:06:00-05:00" pubdate data-updated="true">Feb 19<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/02/19/kotlin-blend-theory-practice/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Why We&#8217;re Interested in a New Language</h2>
-
-<p>In college we were introduced to SML and OCaml. We became enamored with
-functional programming and strong static type systems. &#8220;Bugs are found for you!&#8221; is an expression one frequently
-hears from the <em>new functional convert</em>. After school, we began programming large and complex systems with other developers.
-The amazing functional languages we loved suddenly seemed lacking: e.g. OCaml isn&#8217;t widely used, suffers from poor library support,
-and lacks good supporting tools.</p>
-
-<p>We ended up programming a lot of Java. We&#8217;ve found that there&#8217;s a lot to like:
-strong community support, great libraries (<a href="http://netty.io/">Netty</a>, <a href="http://code.google.com/p/guava-libraries/">Guava</a>,
-<a href="http://cglib.sourceforge.net/">cglib</a>, <a href="http://joda-time.sourceforge.net/">Joda</a>), excellent tools (build, test,
-continuous integration, code coverage) and the JVM is an amazing piece of software. This ecosystem should not be understated:
-the gestalt is enormous gains in productivity and allows developers to ship high quality code. However, we are continually
-left unsatisfied with the Java language &#8211; algebraic data types? Nope.</p>
-
-<p>Clearly our frustration isn&#8217;t new. These points are hitting on well tread territory. Others have appreciated the high quality that
-the JVM ecosystem provides, but were frustrated by Java &#8211; these people created new languages on the JVM. Clojure and Scala are two
-which initially excited us. Clojure has some nice features (lisps can be fun), but we cannot get behind a dynamic type system.
-Scala has many awesome ideas, but too many. So much of our lives are spent making decisions about the interesting
-problems we program on, we don&#8217;t want to be spending time deciding what subset of a language to use. The language should make it clear.</p>
-
-<h2>Enter Kotlin</h2>
-
-<p><a href="http://confluence.jetbrains.net/display/Kotlin/Welcome">Kotlin</a> is a new (beta) JVM-based language from Jetbrains.
-We were very excited when we read about Kotlin. Kotlin is an object oriented language
-incorporating functional paradigms. Kotlin appears to have an eye on the kind of theory we like: higher-order functions, algebraic data types,
-function literals, type aliases, and <a href="http://blog.jetbrains.com/kotlin/2012/01/the-road-ahead/">more</a>.
- Kotlin also has an eye towards pragmatism: there are numerous features which are backed up by real world usage patterns. The inclusion
-of many of the features show that the developers have experience writing software e.g. <em>first-class delegation</em> (see <a href="http://confluence.jetbrains.net/display/Kotlin/Classes+and+Inheritance">Delegation</a>),
-<em>classes do not allow inheritance by default</em> (see <a href="http://confluence.jetbrains.net/display/Kotlin/Classes+and+Inheritance">Inheritance</a>).</p>
-
-<p>The designers of Kotlin have aesthetics which appear to be in line with our own: the exciting thing about programming is
-the ability to make magic a reality. Computer Science gives us theory that allows us to talk about magic,
-we need programming tools which help us make that magic. Kotlin&#8217;s proposed language features, the choice to run on the JVM and its
-blending of programming language theory with a motivation to get things done make us super excited to see where this project goes.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/02/18/hello/">Hello.</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -278,29 +197,44 @@ blending of programming language theory with a motivation to get things done mak
   
 
 
-<time datetime="2012-02-18T18:42:00-05:00" pubdate data-updated="true">Feb 18<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/02/18/hello/#disqus_thread">Comments</a>
-        
-      </p>
+<time datetime="2012-02-19T22:35:00-05:00" pubdate data-updated="true">Feb 19<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/kotlin/'>kotlin</a>, <a class='category' href='/blog/categories/tips/'>tips</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p>This is our blog. We&#8217;re excited it is up.</p>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.ocheyedan.net/blog/2012/02/19/running-kotlin-code/" data-via="" data-counturl="http://blog.ocheyedan.net/blog/2012/02/19/running-kotlin-code/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/02/19/kotlin-blend-theory-practice/" title="Previous Post: Kotlin: A Nice Blend of Theory and Practice?">&laquo; Kotlin: A Nice Blend of Theory and Practice?</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
+  </section>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -330,6 +264,7 @@ blending of programming language theory with a motivation to get things done mak
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -344,7 +279,10 @@ blending of programming language theory with a motivation to get things done mak
       var disqus_shortname = 'ocheyedan';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.ocheyedan.net/blog/2012/02/19/running-kotlin-code/';
+        var disqus_url = 'http://blog.ocheyedan.net/blog/2012/02/19/running-kotlin-code/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

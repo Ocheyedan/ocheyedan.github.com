@@ -4,7 +4,7 @@
   <title><![CDATA[Ocheyedan Blog]]></title>
   <link href="http://blog.ocheyedan.net/atom.xml" rel="self"/>
   <link href="http://blog.ocheyedan.net/"/>
-  <updated>2012-02-19T21:59:21-05:00</updated>
+  <updated>2012-02-19T22:57:29-05:00</updated>
   <id>http://blog.ocheyedan.net/</id>
   <author>
     <name><![CDATA[Brian Langel and Trevor Smith]]></name>
@@ -12,6 +12,97 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Running Kotlin Code]]></title>
+    <link href="http://blog.ocheyedan.net/blog/2012/02/19/running-kotlin-code/"/>
+    <updated>2012-02-19T22:35:00-05:00</updated>
+    <id>http://blog.ocheyedan.net/blog/2012/02/19/running-kotlin-code</id>
+    <content type="html"><![CDATA[<p>The Kotlin tutorials do not discuss how to execute compiled Kotlin code from the command line.</p>
+
+<p>Setting up Kotlin, and running Kotlin code in the IntelliJ IDE plugin is documented
+<a href="http://hadihariri.com/2012/02/17/the-kotlin-journey-part-i-getting-things-set-up/">here</a>.</p>
+
+<p>Given that Kotlin is a young project, there are going to be bugs that are IDE specific.
+We wanted a way to compile and run Kotlin from the command line.</p>
+
+<p>One can compile Kotlin code using a variety of build tools documented
+<a href="http://confluence.jetbrains.net/display/Kotlin/Kotlin+Build+Tools">here</a>.</p>
+
+<p>There are two things one needs to do to run Kotlin code from the command line:</p>
+
+<ul>
+<li>The class path needs to include your compiled code as well as the Kotlin runtime jar</li>
+<li>The main class gets compiled into something called <em>namespace</em></li>
+</ul>
+
+
+<p>Below is an example using Ant. It assumes you have <a href="https://github.com/jetbrains/kotlin">built</a>
+the Kotlin runtime jar and the root Kotlin src directory is set to an environmental
+variable <em>KOTLIN_HOME</em>.</p>
+
+<p>Example Kotlin main:</p>
+
+<div><script src='https://gist.github.com/1867613.js?file='></script>
+<noscript><pre><code>fun main(args : Array&lt;String&gt;) {
+    println(&quot;hello, from Kotlin code!&quot;)
+}</code></pre></noscript></div>
+
+
+<p>Relevant Ant snippet:</p>
+
+<div><script src='https://gist.github.com/1867624.js?file='></script>
+<noscript><pre><code>  &lt;path id=&quot;classpath.run&quot;&gt;
+    &lt;pathelement path=&quot;${output}/&quot;/&gt;
+    &lt;pathelement path=&quot;${env.KOTLIN_HOME}/dist/kotlinc/lib/kotlin-runtime.jar&quot;/&gt;
+  &lt;/path&gt;
+
+  &lt;target name=&quot;run&quot;&gt;
+    &lt;java classname=&quot;namespace&quot;&gt;
+      &lt;sysproperty key=&quot;file.encoding&quot; value=&quot;UTF-8&quot;/&gt;
+      &lt;classpath refid=&quot;classpath.run&quot;/&gt;
+    &lt;/java&gt;
+  &lt;/target&gt;</code></pre></noscript></div>
+
+
+<p>Complete Ant file:</p>
+
+<div><script src='https://gist.github.com/1867619.js?file='></script>
+<noscript><pre><code>&lt;project name=&quot;Kotlin&quot; default=&quot;compile&quot;&gt;
+
+  &lt;property environment=&quot;env&quot;/&gt;
+  &lt;taskdef file=&quot;${env.KOTLIN_HOME}/build-tools/ant/src/org/jetbrains/jet/buildtools/ant/antlib.xml&quot;&gt;
+    &lt;classpath&gt;
+      &lt;fileset dir=&quot;${env.KOTLIN_HOME}/dist/kotlinc/lib&quot; includes=&quot;*.jar&quot;/&gt;
+    &lt;/classpath&gt;
+  &lt;/taskdef&gt;
+
+  &lt;property name=&quot;output&quot; value=&quot;${basedir}/dist&quot;/&gt;
+
+  &lt;target name=&quot;clean&quot;&gt;
+    &lt;delete dir=&quot;${output}&quot;/&gt;
+  &lt;/target&gt;
+
+  &lt;target name=&quot;compile&quot;&gt;
+      &lt;kotlinc src=&quot;${basedir}/src/main/kotlin/&quot; output=&quot;${output}&quot;/&gt;
+  &lt;/target&gt;
+
+  &lt;path id=&quot;classpath.run&quot;&gt;
+    &lt;pathelement path=&quot;${output}/&quot;/&gt;
+    &lt;pathelement path=&quot;${env.KOTLIN_HOME}/dist/kotlinc/lib/kotlin-runtime.jar&quot;/&gt;
+  &lt;/path&gt;
+
+  &lt;target name=&quot;run&quot;&gt;
+    &lt;java classname=&quot;namespace&quot;&gt;
+      &lt;sysproperty key=&quot;file.encoding&quot; value=&quot;UTF-8&quot;/&gt;
+      &lt;classpath refid=&quot;classpath.run&quot;/&gt;
+    &lt;/java&gt;
+  &lt;/target&gt;
+
+&lt;/project&gt;</code></pre></noscript></div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Kotlin: A Nice Blend of Theory and Practice?]]></title>
