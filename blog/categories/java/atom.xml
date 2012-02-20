@@ -4,7 +4,7 @@
   <title><![CDATA[Category: java | Ocheyedan Blog]]></title>
   <link href="http://blog.ocheyedan.net/blog/categories/java/atom.xml" rel="self"/>
   <link href="http://blog.ocheyedan.net/"/>
-  <updated>2012-02-19T21:19:35-05:00</updated>
+  <updated>2012-02-19T21:21:18-05:00</updated>
   <id>http://blog.ocheyedan.net/</id>
   <author>
     <name><![CDATA[Brian Langel and Trevor Smith]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Kotlin: A Nice Blend of Theory and Practice?]]></title>
-    <link href="http://blog.ocheyedan.net/blog/2012/02/19/kotlin-initial-thoughts-and-some-setup/"/>
+    <link href="http://blog.ocheyedan.net/blog/2012/02/19/kotlin-blend-theory-practice/"/>
     <updated>2012-02-19T18:06:00-05:00</updated>
-    <id>http://blog.ocheyedan.net/blog/2012/02/19/kotlin-initial-thoughts-and-some-setup</id>
+    <id>http://blog.ocheyedan.net/blog/2012/02/19/kotlin-blend-theory-practice</id>
     <content type="html"><![CDATA[<h2>Why We're Interested in a New Language</h2>
 
 <p>In college we were introduced to SML and OCaml. We became enamored with
